@@ -54,8 +54,6 @@ pacman -Sy --noconfirm
 echo -e "\nInstalling Base System\n"
 
 PKGS=(
-'firefox'
-'libreoffice'
 'mesa' # Essential Xorg First
 'xorg'
 'xorg-server'
@@ -86,7 +84,7 @@ PKGS=(
 'btrfs-progs'
 'celluloid' # video players
 'cmatrix'
-#'code' # Visual Studio code
+'code' # Visual Studio code
 'cronie'
 'cups'
 'dialog'
@@ -103,10 +101,10 @@ PKGS=(
 'fuse2'
 'fuse3'
 'fuseiso'
-#'gamemode'
+'gamemode'
 'gcc'
-#'gimp' # Photo editing
-""'git'
+'gimp' # Photo editing
+'git'
 'gparted' # partition management
 'gptfdisk'
 'grub'
@@ -119,7 +117,7 @@ PKGS=(
 'htop'
 'iptables-nft'
 'jdk-openjdk' # Java 17
-#'kate'
+'kate'
 'kcodecs'
 'kcoreaddons'
 'kde-plasma-addons'
@@ -127,7 +125,7 @@ PKGS=(
 'kscreen'
 'kvantum-qt5'
 'kde-gtk-config'
-#'kitty'
+'kitty'
 'konsole'
 'kscreen'
 'layer-shell-qt'
@@ -138,7 +136,7 @@ PKGS=(
 'linux-firmware'
 'linux-headers'
 'lsof'
-#'lutris'
+'lutris'
 'lzop'
 'm4'
 'make'
@@ -169,13 +167,13 @@ PKGS=(
 'python-psutil'
 'python-pyqt5'
 'python-pip'
-#'qemu'
+'qemu'
 'rsync'
 'sddm'
 'sddm-kcm'
-#'snapper'
-#'spectacle'
-#'steam'
+'snapper'
+'spectacle'
+'steam'
 'sudo'
 'swtpm'
 'synergy'
@@ -186,14 +184,14 @@ PKGS=(
 'unrar'
 'unzip'
 'usbutils'
-#'vim'
-#'virt-manager'
-#'virt-viewer'
+'vim'
+'virt-manager'
+'virt-viewer'
 'wget'
 'which'
-#'wine-gecko'
-#'wine-mono'
-#'winetricks'
+'wine-gecko'
+'wine-mono'
+'winetricks'
 'xdg-desktop-portal-kde'
 'xdg-user-dirs'
 'zeroconf-ioslave'
