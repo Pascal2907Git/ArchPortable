@@ -54,6 +54,7 @@ pacman -Sy --noconfirm
 echo -e "\nInstalling Base System\n"
 
 PKGS=(
+'libreoffice'
 'mesa' # Essential Xorg First
 'xorg'
 'xorg-server'
