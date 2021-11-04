@@ -106,14 +106,6 @@ echo "--------------------------------------"
 pacstrap /mnt base base-devel linux linux-firmware vim nano sudo archlinux-keyring wget libnewt --noconfirm --needed
 genfstab -U /mnt >> /mnt/etc/fstab
 echo "keyserver hkp://keyserver.ubuntu.com" >> /mnt/etc/pacman.d/gnupg/gpg.conf
-echo "--------------------------------------"
-echo "-- GRUB Bootloader Installation     --"
-echo "--------------------------------------"
-if [[ ! -d "/sys/firmware/efi" ]]; then
-    grub-install --boot-directory=/mnt/boot ${DISK}
-else
-    grub-install --efi-directory=/mnt/boot ${DISK}
-fi
 cp -R ${SCRIPT_DIR} /mnt/root/ArchTitus
 cp /etc/pacman.d/mirrorlist /mnt/etc/pacman.d/mirrorlist
 echo "--------------------------------------"
@@ -133,5 +125,5 @@ if [[  $TOTALMEM -lt 8000000 ]]; then
     echo "/opt/swap/swapfile	none	swap	sw	0	0" >> /mnt/etc/fstab #Add swap to fstab, so it KEEPS working after installation.
 fi
 echo "--------------------------------------"
-echo "--   SYSTEM READY FOR 0-setup       --"
+echo "--   SYSTEM READY FOR 1-setup       --"
 echo "--------------------------------------"
