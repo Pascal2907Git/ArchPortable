@@ -55,11 +55,13 @@ echo -e "\nInstalling Base System\n"
 
 PKGS=(
 'libreoffice'
+'libreoffice-fresh-fr'
 'firefox'
 'firejail'
 'gnome-disk-utility'
 'plasma-systemmonitor'
 'vlc'
+'gufw'
 'mesa' # Essential Xorg First
 'xorg'
 'xorg-server'
@@ -125,6 +127,7 @@ PKGS=(
 'kcoreaddons'
 'kde-plasma-addons'
 'kinfocenter'
+'kitty'
 'kscreen'
 'kvantum-qt5'
 'kde-gtk-config'
@@ -182,6 +185,7 @@ PKGS=(
 'unrar'
 'unzip'
 'usbutils'
+'vim'
 'virt-manager'
 'virt-viewer'
 'wget'
